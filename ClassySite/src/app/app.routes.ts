@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
-import { Masterpage } from './masterpage/masterpage';
+import { Home } from './pages/home/home';
 
 export const routes: Routes = [
-    { path: '', component: Masterpage },
+    { path: '', component: Home },
 ];
