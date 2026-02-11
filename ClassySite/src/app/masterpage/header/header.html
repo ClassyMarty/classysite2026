@@ -1,1 +1,34 @@
-<p>header works!</p>
+<mat-toolbar>
+
+    <img class="logo" src="/favicon.ico" >
+<h1>Classy Marty</h1>
+  <span class="spacer"></span>
+  <!-- -------- Menu -------- -->
+  <a matButton="tonal" routerLink=""><mat-icon>home</mat-icon>Home</a>
+
+  <button matButton="tonal" [matMenuTriggerFor]="AboutMe"><mat-icon>sentiment_very_satisfied</mat-icon>About Me</button>
+  <mat-menu #AboutMe="matMenu">
+    <a mat-menu-item routerLink="resume"><mat-icon>handyman</mat-icon>Resume</a>
+    <a mat-menu-item routerLink="hobbies"><mat-icon>gamepad_circle_left</mat-icon>Hobbies</a>
+  </mat-menu>
+
+  <button matButton="tonal" [matMenuTriggerFor]="Projects"><mat-icon>rocket_launch</mat-icon>Projects</button>
+  <mat-menu #Projects="matMenu">
+    <a mat-menu-item routerLink="thissite"><mat-icon>assignment_globe</mat-icon>This site!</a>
+  </mat-menu>
+
+  <a matButton="tonal" routerLink="contact"><mat-icon>chat_bubble</mat-icon>Let's Chat!</a>
+  <!-- -------- Menu End -------- -->
+  <span class="spacer"></span>
+  <!-- -------- Social Icons -------- -->
+  <button
+    matIconButton
+    class="example-icon favorite-icon"
+    aria-label="Example icon-button with heart icon"
+  >
+    <mat-icon>favorite</mat-icon>
+  </button>
+  <button matIconButton class="example-icon" aria-label="Example icon-button with share icon">
+    <mat-icon>share</mat-icon>
+  </button>
+</mat-toolbar>
