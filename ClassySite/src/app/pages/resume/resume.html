@@ -1,50 +1,15 @@
-<div class="cardcontainer">
-  <mat-card MatCard Appearance="filled">
+<div class="matcard-container">
+  <mat-card MatCardAppearance = 'filled'>
     <mat-card-header>
-      <mat-card-title>Martin Grobbelaar Resume</mat-card-title>
+      <mat-card-title>MARTIN GROBBELAAR</mat-card-title>
+      <mat-card-subtitle>ultrawyrm@gmail.com</mat-card-subtitle>
     </mat-card-header>
     <mat-card-content>
-      <mat-tab-group>
-        <mat-tab>
-          <ng-template mat-tab-label>
-            <mat-icon class="example-tab-icon">thumb_up</mat-icon>
-            OBJECTIVE
-          </ng-template>
-          <app-objective></app-objective>
-        </mat-tab>
-
-        <mat-tab>
-          <ng-template mat-tab-label>
-            <mat-icon class="example-tab-icon">thumb_up</mat-icon>
-            KEY SKILLS
-          </ng-template>
-          <app-keyskills></app-keyskills>
-        </mat-tab>
-
-        <mat-tab>
-          <ng-template mat-tab-label>
-            <mat-icon class="example-tab-icon">thumb_up</mat-icon>
-            KEY PROJECTS
-          </ng-template>
-          <app-keyprojects></app-keyprojects>
-        </mat-tab>
-
-        <mat-tab>
-          <ng-template mat-tab-label>
-            <mat-icon class="example-tab-icon">thumb_up</mat-icon>
-            EXPERIENCE
-          </ng-template>
-          <app-experience></app-experience>
-        </mat-tab>
-
-        <mat-tab>
-          <ng-template mat-tab-label>
-            <mat-icon class="example-tab-icon">thumb_up</mat-icon>
-            EDUCATION
-          </ng-template>
-          <app-education></app-education>
-        </mat-tab>
-      </mat-tab-group>
+      <app-objective></app-objective>
+      <app-keyskills></app-keyskills>
+      <app-keyprojects></app-keyprojects>
+      <app-experience></app-experience>
+      <app-education></app-education>
     </mat-card-content>
   </mat-card>
 </div>
